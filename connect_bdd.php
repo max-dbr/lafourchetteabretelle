@@ -1,5 +1,5 @@
 <?php
-    $host = 'localhost';
+    $host = 'jean';
     $dbname = 'workshop';
     $user = 'jeanbernard';
     $mdp = 'root';
