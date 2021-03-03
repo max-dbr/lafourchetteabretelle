@@ -1,7 +1,7 @@
 <?php
     $host = 'localhost';
     $dbname = 'workshop';
-    $user = 'jean';
+    $user = 'jeanbernard';
     $mdp = 'root';
     try
     {
