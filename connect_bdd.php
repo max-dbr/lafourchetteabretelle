@@ -2,7 +2,7 @@
     $host = 'localhost';
     $dbname = 'workshop';
     $user = 'jeanbernard';
-    $mdp = 'root';
+    $mdp = 'jean';
     try
     {
         $bdd=new PDO("mysql:host=$host;dbname=$dbname", $user, $mdp);
