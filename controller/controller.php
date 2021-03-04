@@ -47,6 +47,10 @@ if ($_GET['page'] == "login")
     {
         $pageActuelle = 'commande.php';
     }
+    else if ($_GET['page'] == "modplat")
+    {
+        $pageActuelle = 'modifierplat.php';
+    }
 }
 else
 {
