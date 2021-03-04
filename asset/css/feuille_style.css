@@ -26,7 +26,6 @@ nav ul
     display: flex;
 }
 
-
 .menu {
     display: flex;                /* Transformation en flexbox */
     padding:0;          /* Suppression des marges internes */
@@ -114,7 +113,6 @@ nav ul
 	width : 90px;
 }
 
-
 #bienvenueAccueil
 {
 	text-align: center;
@@ -154,7 +152,7 @@ nav ul
 
 #carouselExampleControls
 {
-	width : 1000px;
+	width : 50%;
 	margin-left : 25%;
 }
 
@@ -200,7 +198,23 @@ nav ul
 
 
 
+@media screen and (max-width :1199px)
+{
+    .carrouselDiv
+	{
+		visibility: hidden;
+	}
+	.carrouselDiv
+	{
+		margin-right:50px;
+	}
+	.logo
+	{
+		width : 300px;
+	}
 
+
+}
 
 
 

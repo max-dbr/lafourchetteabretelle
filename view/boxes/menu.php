@@ -2,7 +2,6 @@
 <header class="header">
  
    
- 
             <?php 
             if(empty($_SESSION['ROLE'])) 
             { 
@@ -21,5 +20,9 @@
             ?>
             
         </ul>
+        
+        
+
+
     </nav>
 </header>

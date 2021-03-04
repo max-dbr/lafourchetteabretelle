@@ -28,21 +28,21 @@
     <div class="carousel-item active">
       <div class="carouselBloc"><img src="/lafourchetteabretelle/asset/images/Les Classiques.png" class="d-block w-50" alt="..." class="carrousel">
       <div class="carrouselDiv">
-        <span class="titreMenuCarousel">L'Abdel Burger</span> <br><br>
-        <span>Un pain moelleux avec éclats de maïs, une sauce goût fumé, des oignons croustillants, des onion rings, des tranches de bacon , des tranches de cheddar fondu et une viande de bœuf grillée à la flamme !</span>
+        <span class="titreMenuCarousel">Les Classiques</span> <br><br>
+        <span>Venez goûter les grands classiques de la bonne cuisine. Des pâtes à la carbonara, en passant par de bonnes lasagnes ou encore un bon risotto. Vous y trouverez forcément votre bonheur !</span>
       </div>
     </div>
     </div>
      <div class="carousel-item">
-     <div class="carouselBloc"><img src="http://assets.suelo.pl/soup/img/photos/special-pizza.jpg" class="d-block w-50" alt="..." class="carrousel">
+     <div class="carouselBloc"><img src="/lafourchetteabretelle/asset/images/Specialités.png" class="d-block w-50" alt="..." class="carrousel">
       <div class="carrouselDiv">
-      <span class="titreMenuCarousel">L'Abdel Burger</span> <br><br>
-      <span>Un pain moelleux avec éclats de maïs, une sauce goût fumé, des oignons croustillants, des onion rings, des tranches de bacon , des tranches de cheddar fondu et une viande de bœuf grillée à la flamme !</span>
+      <span class="titreMenuCarousel">Spécialités Maison</span> <br><br>
+      <span>Les plus grands secrets de notre cuisine sont ici. Des recettes que vous ne trouverez nulle part ailleurs et dont vous nous en direz des nouvelles. Chaque semaine une nouvelle spécialité à ne pas manquer !</span>
     </div>
     </div>
     </div>
     <div class="carousel-item">
-     <div class="carouselBloc"><img src="http://assets.suelo.pl/soup/img/photos/special-pizza.jpg" class="d-block w-50" alt="..." class="carrousel">
+     <div class="carouselBloc"><img src="/lafourchetteabretelle/asset/images/Burgers.png" class="d-block w-50" alt="..." class="carrousel">
       <div class="carrouselDiv">
       <span class="titreMenuCarousel">L'Abdel Burger</span> <br><br>
       <span>Un pain moelleux avec éclats de maïs, une sauce goût fumé, des oignons croustillants, des onion rings, des tranches de bacon , des tranches de cheddar fondu et une viande de bœuf grillée à la flamme !</span>
@@ -58,7 +58,7 @@
     <span class="visually-hidden">Next</span>
     </button>
     </div></div>
-    <br><br><br>
+    <br><br>
 
 </body>
 
