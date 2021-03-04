@@ -18,6 +18,7 @@
     ?>
     
     </body>
+    <br><br><br>
     <footer>
     <?php include('./view/boxes/footer.php'); ?>
     </footer>

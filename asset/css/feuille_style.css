@@ -1,26 +1,3 @@
-/******************************** RESET CSS ******************************/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
 nav ul
 {
     list-style: none;
@@ -142,22 +119,48 @@ nav ul
 
 #carouselExampleControls
 {
-	width : 600px;
-	margin-left : 37%;
+	width : 1000px;
+	margin-left : 25%;
 }
 
 .carouselBloc
 {
 	display : flex;
-	flex-grow: 300;
-	background-color: grey;
-	position : relative;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.carrouselDiv
+{
+	width: 50%;
+	padding-top: 65px;
+	padding-bottom : 65px;
+	padding-left : 40px;
+	padding-right : 40px;
+	background-color: whitesmoke;
+	margin-left : -50px;
+
+}
+
+.titreMenuCarousel
+{
+	font-size : 1.8em;
 }
 
 
+#footer
+{
+	background-color: black;
+	height : 30%;
+	text-align: center;
+	color : white;
+	font-size : 1em;
+}
 
-
-
+#logoBlanc
+{
+	width : 300px;
+}
 
 
 
@@ -177,53 +180,7 @@ nav ul
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
-* {
-	box-sizing: border-box;
-}
 
-p {
-	font-size: 14px;
-	font-weight: 100;
-	line-height: 20px;
-	letter-spacing: 0.5px;
-	margin: 20px 0 30px;
-}
-
-span {
-	font-size: 12px;
-}
-
-a {
-	color: #333;
-	font-size: 14px;
-	text-decoration: none;
-	margin: 15px 0;
-}
-
-button {
-	border-radius: 20px;
-	border: 1px solid black;
-	background-color: green;
-	color: black;
-	font-size: 12px;
-	font-weight: bold;
-	padding: 12px 45px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	transition: transform 80ms ease-in;
-}
-
-button:active {
-	transform: scale(0.95);
-}
-
-button:focus {
-	outline: none;
-}
-
-button.ghost {
-	border-color: #FFFFFF;
-}
 
 .forme {
 	background-color: white;

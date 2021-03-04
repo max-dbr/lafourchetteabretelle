@@ -31,17 +31,25 @@
     <br>
     <div id="specialites">Quelques unes de nos spécialités</div>
     <br>
-
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
     <div class="carousel-item active">
-      <div class="carouselBloc"><img src="http://assets.suelo.pl/soup/img/photos/special-pizza.jpg" class="d-block w-100" alt="..." class="carrousel"><div>Hello World</div></div>
+      <div class="carouselBloc"><img src="http://assets.suelo.pl/soup/img/photos/special-pizza.jpg" class="d-block w-50" alt="..." class="carrousel">
+      <div class="carrouselDiv">
+        <span class="titreMenuCarousel">L'Abdel Burger</span> <br><br>
+        <span>Un pain moelleux avec éclats de maïs, une sauce goût fumé, des oignons croustillants, des onion rings, des tranches de bacon , des tranches de cheddar fondu et une viande de bœuf grillée à la flamme !</span>
+      </div>
+    </div>
+    </div>
+     <div class="carousel-item">
+     <div class="carouselBloc"><img src="http://assets.suelo.pl/soup/img/photos/special-pizza.jpg" class="d-block w-50" alt="..." class="carrousel">
+      <div class="carrouselDiv">
+        Helloooooooooooooo World</div>
+    </div>
     </div>
     <div class="carousel-item">
-      <img src="https://static.emilehenry.com/866768-large_default/plat-a-four-ovale.jpg" class="d-block w-100" alt="..." class="carrousel">
-    </div>
-    <div class="carousel-item">
-      <img src="https://static.emilehenry.com/866768-large_default/plat-a-four-ovale.jpg" class="d-block w-100" alt="..." class="carrousel">
+     <div class="carouselBloc"><img src="http://assets.suelo.pl/soup/img/photos/special-pizza.jpg" class="d-block w-50" alt="..." class="carrousel">
+      <div class="carrouselDiv">Helloooooooooooooo World</div>
     </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
@@ -52,7 +60,8 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
     </button>
-    </div>
+    </div></div>
+    <br><br><br>
 
 </body>
 
