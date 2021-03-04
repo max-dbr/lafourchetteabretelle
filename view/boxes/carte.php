@@ -17,7 +17,7 @@ $sql = "SELECT * FROM `plats`";
                 <img src="<?= $array[2];?>" height="150" width="300" />
                 <div><?= $array[1];?></div>
                 <div><?= $array[3];?> Euros</div>
-                <div><?= $array[5];?></div><br>
+                
 
                 <form method="POST" action="./index.php?page=commande" class="form">
                 <input type="hidden" name="IDPRODUIT" id="IDPRODUIT" value="<?php echo $array[0]?>"> <input type="submit" value="Commander"></input></form>
@@ -29,13 +29,16 @@ $sql = "SELECT * FROM `plats`";
                 <form  method="POST" action="./execution/suppressionproduit.php" class="form">
                 <input type="hidden" name="IDPD" id="IDPD" value="<?php echo $array[0]?>"> <input type="submit" value="Supprimer"></input></form>
 
-                <form method="POST" action="./view/boxes/commande.php" class="form">
-                <input type="hidden" name="" value="<?php echo $array[0]?>"> <input type="submit" value="Modifier"></input>
+                <form method="POST" action="./index.php?page=modplat" class="form">
+                <input type="hidden" name="MODIF" value="<?php echo $array[0]?>"> <input type="submit" value="Modifier"></input>
                 <?php
                 }
                 ?>
             </div>
             </form>
+
+
+
             
         <?php 
         }

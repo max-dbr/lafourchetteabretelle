@@ -5,7 +5,7 @@
     $dbname = 'workshop';
     $user = 'root';
     $mdp = 'root';
-    $IDP=$_POST['IDPRODUIT'];
+    $IDRMODIF = $_POST['MODIFRESTAURANT']
     try
     {
         $bdd=new PDO("mysql:host=$host;dbname=$dbname", $user, $mdp);
@@ -19,33 +19,33 @@
 <?php
     if(isset($_SESSION['Mail'])) 
     {
-        $requser = $bdd->prepare("SELECT * FROM clients WHERE ADRESSEMAIL = ?");
+        $requser = $bdd->prepare("SELECT * FROM restaurants WHERE ID = $IDRMODIF");
         $requser->execute(array($_SESSION['Mail']));
         $user = $requser->fetch();
 
-        if(isset($_POST['newadresse'])) 
+        if(isset($_POST['newville'])) 
+        {
+           $newville = htmlspecialchars($_POST['newville']);
+           $insertville = $bdd->prepare("UPDATE restaurants SET VILLE = ? WHERE ID = $IDRMODIF");
+           $insertville->execute(array($newville, $_SESSION['Mail']));
+        }
+        if(isset($_POST['newadresse']) ) 
         {
            $newadresse = htmlspecialchars($_POST['newadresse']);
-           $insertadresse = $bdd->prepare("UPDATE clients SET ADRESSE = ? WHERE ADRESSEMAIL = ?");
+           $insertadresse = $bdd->prepare("UPDATE restaurants SET ADRESSE = ? WHERE ID = $IDRMODIF");
            $insertadresse->execute(array($newadresse, $_SESSION['Mail']));
         }
-        if(isset($_POST['newphone']) ) 
+        if(isset($_POST['newtel']) ) 
         {
-           $newphone = htmlspecialchars($_POST['newphone']);
-           $insertphone = $bdd->prepare("UPDATE clients SET TEL = ? WHERE ADRESSEMAIL = ?");
-           $insertphone->execute(array($newphone, $_SESSION['Mail']));
+           $newtel = htmlspecialchars($_POST['newtel']);
+           $inserttel = $bdd->prepare("UPDATE restaurants SET TEL = ? WHERE ID = $IDRMODIF");
+           $inserttel->execute(array($newtel, $_SESSION['Mail']));
         }
-        if(isset($_POST['newmail']) ) 
+        if(isset($_POST['newtables']) ) 
         {
-           $newmail = htmlspecialchars($_POST['newmail']);
-           $insertmail = $bdd->prepare("UPDATE clients SET ADRESSEMAIL = ? WHERE ADRESSEMAIL = ?");
-           $insertmail->execute(array($newmail, $_SESSION['Mail']));
-        }
-        if(isset($_POST['newpasse']) ) 
-        {
-           $newpasse = htmlspecialchars($_POST['newpasse']);
-           $insertpasse = $bdd->prepare("UPDATE clients SET MOTDEPASSE = ? WHERE ADRESSEMAIL = ?");
-           $insertpasse->execute(array($newpasse, $_SESSION['Mail']));
+           $newtables = htmlspecialchars($_POST['newtables']);
+           $inserttables = $bdd->prepare("UPDATE restaurants SET NOMBRETABLES = ? WHERE ID = $IDRMODIF");
+           $inserttables->execute(array($newtables, $_SESSION['Mail']));
         }
         }
         header('Location: ../index.php');

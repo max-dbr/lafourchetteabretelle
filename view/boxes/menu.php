@@ -27,7 +27,7 @@
             }
             ?>
             <?php
-            if ($_SESSION['Mail'] == "admin@gmail.com")
+            if($_SESSION['Mail'] == "admin@gmail.com")
             {
                 ?>
             <li><a href="./index.php?page=administration">Administration</a></li>

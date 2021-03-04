@@ -7,6 +7,6 @@ if(!$SupprimerSQL){
     echo "<p class='alert alert-danger'>L'OBJET n'a pas été supprimé</p>";
 }
 else {
-    header('Location: /index.php?page=restaurants');
+    header('Location: ../index.php?page=restaurants');
 }
 ?>
