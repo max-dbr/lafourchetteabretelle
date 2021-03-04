@@ -51,6 +51,11 @@ if ($_GET['page'] == "login")
     {
         $pageActuelle = 'modifierplat.php';
     }
+    else if ($_GET['page'] == "modifrestaut")
+    {
+        $pageActuelle = 'modifierrestaurant.php';
+    }
+
 }
 else
 {

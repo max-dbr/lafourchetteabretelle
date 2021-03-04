@@ -8,7 +8,7 @@ $Telephone=$_POST['Tel'];
 
 $sql = "INSERT INTO `restaurants`(`VILLE`, `ADRESSE`, `NOMBRETABLES`,`TEL`) VALUES ('$Ville','$Adresse',$Tables,'$Telephone')";
     mysqli_query($connection, $sql);
-    header('Location: /index.php?page=restaurants');
+    header('Location: ../index.php?page=restaurants');
 
 
 ?>

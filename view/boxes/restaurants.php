@@ -31,8 +31,8 @@ $enrs = $rs->fetchAll();
 <td> <?php echo $array[4]?></td>
 <td><form name="form1" method="POST" action="./execution/suppressionrestaurant.php" class="form"> 
     <input type="hidden" name="IDRESTAURANT" value="<?php echo $array[0]?>"> <input type="submit" value="SUPPRIMER"></input> </form></td>
-<td><form name="form1" method="POST" action="./view/boxes/modifierrestaurant.php" class="form"> 
-    <input type="hidden" name="IDRESTAURANT" value="<?php echo $array[0]?>"> <input type="submit" value="MODIFIER"></input> </form></td>
+<td><form name="form1" method="POST" action="./index.php?page=modifrestaut" class="form"> 
+    <input type="hidden" name="MODIFRESTAURANT" value="<?php echo $array[0]?>"> <input type="submit" value="MODIFIER"></input> </form></td>
 
 <?php
 $Situation = "";
@@ -45,8 +45,8 @@ else
     $Situation = "FERMER";
 }
 ?>
-<td><form name="form1" method="POST" action="./execution/suppressionrestaurant.php" class="form"> 
-    <input type="hidden" name="IDRESTAURANT" value="<?php echo $array[0]?>"> <input type="submit" value="<?php echo $Situation?>"></input> </form></td>
+<td><form name="form1" method="POST" action="./execution/situation.php" class="form"> 
+    <input type="hidden" name="IDRESTAURANT" value="<?php echo $array[0]?>"> <input type="submit" name ="SITUATION" value="<?php echo $Situation?>"></input> </form></td>
 
 </tr>
 <?php
