@@ -5,7 +5,6 @@
     $dbname = 'workshop';
     $user = 'root';
     $mdp = 'root';
-    $IDRMODIF = $_POST['MODIFRESTAURANT']
     try
     {
         $bdd=new PDO("mysql:host=$host;dbname=$dbname", $user, $mdp);
@@ -17,6 +16,7 @@
     }
 ?>
 <?php
+   $IDRMODIF = $_POST['MODIFRESTAURANT'];
     if(isset($_SESSION['Mail'])) 
     {
         $requser = $bdd->prepare("SELECT * FROM restaurants WHERE ID = $IDRMODIF");

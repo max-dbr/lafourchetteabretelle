@@ -10,7 +10,7 @@ $enrs = $rs->fetch();
 <div align="center">
          <h2>MODIFIER MES INFORMATIONS</h2>
          <br /><br />
-         <form method="POST" action="./execution/modifier.php">
+         <form method="POST" action="./execution/modifierrestaurant.php">
             <table>
                <tr>
                   <td align="right">
