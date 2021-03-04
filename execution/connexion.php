@@ -41,6 +41,7 @@ if(isset($_POST['connexion'])) { // si le bouton "Connexion" est appuyé
                     $_SESSION['FIDELITE'] = $enr['FIDELITE'];
                     $_SESSION['ADRESSE'] = $enr['ADRESSE'];
                     $_SESSION['TEL'] = $enr['TEL'];
+                    $_SESSION['ROLE'] = $enr['ROLE'];
 
 
                 

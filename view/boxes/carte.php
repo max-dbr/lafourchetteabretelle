@@ -1,4 +1,5 @@
 <?php
+
 $sql = "SELECT * FROM `plats`";
     $rs  = $bdd->prepare($sql);
     $rs->execute(); 
@@ -23,7 +24,7 @@ $sql = "SELECT * FROM `plats`";
                 <form method="POST" action="./index.php?page=commande" class="form">
                 <input type="hidden" name="IDPRODUIT" id="IDPRODUIT" value="<?php echo $array[0]?>"> <input type="submit" value="Commander"></input></form>
                 <?php
-            if(($_SESSION['Mail']) == "admin@gmail.com") 
+            if(($_SESSION['ROLE']) == 1) 
                 {
                 ?>
 
