@@ -34,13 +34,12 @@ $enrs = $rs->fetchAll();
 <td> <?php echo $array[4]?></td>
 <td> <?php echo $array[5]?></td>
 <td> <?php echo $array[7]?></td>
-<td> <?php echo $array[6]?></td>
+<td> <?php echo $array[6]?> €</td>
 <td> <?php echo $array[9]?></td>
-<input type="HIDDEN" name ="IDCOMMANDE" value="<?php echo $array[0]; ?>">
 <td><form name="form1" method="POST" action="./execution/suppressioncommande.php" class="form"> 
-    <input type="hidden" name="IDCOMMANDEs" value="<?php echo $array[0]?>"> <input type="submit" value="ANNULER"></input> </form></td>
+    <input type="hidden" name="IDANNULATION" value="<?php echo $array[0]?>"> <input type="submit" value="ANNULER"></input> </form></td>
 <td><form name="form1" method="POST" action="./index.php?page=modifiercommande" class="form"> 
-    <input type="hidden" name="IDCOMMANDE" value="<?php echo $array[0]?>"> <input type="submit" value="MODIFIER"></input> </form></td>
+    <input type="hidden" name="IDMODIFICATION" value="<?php echo $array[0]?>"> <input type="submit" value="MODIFIER"></input> </form></td>
 
 </tr>
 <?php
