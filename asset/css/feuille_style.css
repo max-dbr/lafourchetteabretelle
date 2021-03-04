@@ -11,7 +11,8 @@
 
 body
 {
-	background-color: #535353;
+	background-color: #535353 !important;
+	color : #ff3600 !important;
 }
 
 .logo
@@ -69,12 +70,15 @@ nav ul
 
 #takeAwayImage
 {
-	width : 100px;
+	width : 50px;
 }
 
 #conteneurTakeAway
 {
 	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	
 }
 
 #callToAction1
@@ -89,16 +93,28 @@ nav ul
 }
 #callToAction1:hover
 {
-	background-color: black;
-    color: #B1876F;
-    border-color:#B1876F;
+    opacity: 70%;
 }
 
 #callToAction1
 {
 	top : 500px;
 	right : 20px;
+	width : 300px;
 }
+
+#fontTakeAway
+{
+	font-family: "Play";
+	color : #ff3600;
+	font-size: 1.4em;
+}
+
+#interieur, #carteAllechante, #zeroGachis
+{
+	width : 90px;
+}
+
 
 #bienvenueAccueil
 {
@@ -119,23 +135,17 @@ nav ul
 }
 
 .hover14 figure img {
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover14 figure:hover img {
 	-webkit-transform: rotate(15deg) scale(1.4);
 	transform: rotate(15deg) scale(1.4);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-.hover14 figure:hover img {
-	-webkit-transform: rotate(0) scale(1);
-	transform: rotate(0) scale(1);
-}
-
-.iconeSpan
-{
-	margin-left : -40px;
-}
-
-
-
 
 #specialites
 {
