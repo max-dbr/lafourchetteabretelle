@@ -4,7 +4,7 @@
 
     <nav class="menu">
         <ul>
-            <li><a href="./index.php"><img class="logo" src="/la-fourchette-a-bretelles-logoV2-02.png"></a></li>
+            <li><a href="./index.php"><img class="logo" src="/asset/images/la-fourchette-a-bretelles-logoV2-02.png"></a></li>
             <li><a href="./index.php">Accueil</a></li>
             <li><a href="./index.php?page=carte">Carte</a></li>
             <?php
