@@ -36,9 +36,9 @@ $enrs = $rs->fetchAll();
 <td> <?php echo $array[7]?></td>
 <td> <?php echo $array[6]?> €</td>
 <td> <?php echo $array[9]?></td>
-<td><form name="form1" method="POST" action="./execution/suppressioncommande.php" class="form"> 
+<td><form name="form1" method="POST" action="./execution/suppressioncommande.php" class="forme"> 
     <input type="hidden" name="IDANNULATION" value="<?php echo $array[0]?>"> <input type="submit" value="ANNULER"></input> </form></td>
-<td><form name="form1" method="POST" action="./index.php?page=modifiercommande" class="form"> 
+<td><form name="form1" method="POST" action="./index.php?page=modifiercommande" class="forme"> 
     <input type="hidden" name="IDMODIFICATION" value="<?php echo $array[0]?>"> <input type="submit" value="MODIFIER"></input> </form></td>
 
 </tr>
