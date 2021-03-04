@@ -36,8 +36,8 @@ $enrs = $rs->fetchAll();
 <td> <?php echo $array[7]?></td>
 <td> <?php echo $array[6]?></td>
 <td> <?php echo $array[9]?></td>
-<td><form name="form1" method="POST" action="./execution/suppressionrestaurant.php" class="form"> 
-    <input type="hidden" name="IDRESTAURANT" value="<?php echo $array[0]?>"> <input type="submit" value="ANNULER"></input> </form></td>
+<td><form name="form1" method="POST" action="./execution/suppressioncommande.php" class="form"> 
+    <input type="hidden" name="IDCOMMANDE" value="<?php echo $array[0]?>"> <input type="submit" value="ANNULER"></input> </form></td>
 <td><form name="form1" method="POST" action="./index.php?page=modifrestaut" class="form"> 
     <input type="hidden" name="MODIFRESTAURANT" value="<?php echo $array[0]?>"> <input type="submit" value="MODIFIER"></input> </form></td>
 
