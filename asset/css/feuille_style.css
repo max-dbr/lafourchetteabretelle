@@ -356,3 +356,69 @@ input {
 
 
 
+
+
+
+
+
+
+
+/************************** TABLE ABDEL RESPONSIVE  **********************/
+
+table { 
+	width: 850px; 
+	border-collapse: collapse; 
+	margin:50px auto;
+	}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: white; 
+	}
+
+th { 
+	background:black; 
+	color:white; 
+	font-weight: bold;
+	text-align: center;
+	}
+
+td, th { 
+	padding: 10px; 
+	border: 1px solid black; 
+	text-align: left; 
+	font-size: 13px;
+	}
+
+	form {
+		padding: 30px;
+		align-items: center;
+		text-align: center;
+	}
+	.input[type=submit] {
+		align-items: center;
+		background-color: gold;
+		color: black;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: auto;
+	}
+	.input[type=submit]:hover {
+		background-color: black;
+		color: gold;
+		border: 1px solid gold;
+	}
+	fieldset {
+		flex-wrap: wrap;
+		margin-right: 50px;
+		margin-left: 50px;
+		padding: 15px;
+		border-color: #9B584C;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 14px;
+		
+	   }
+
+	

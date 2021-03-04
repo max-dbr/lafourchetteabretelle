@@ -4,8 +4,7 @@
     $dbname = 'workshop';
     $user = 'root';
     $mdp = 'root';
-    $_POST['IDCOMMANDE']  = $IDCOMMANDE;
-
+    $_SESSION['IDCOMMANDE'] = $_POST['IDCOMMANDE'];
     try
     {
         $bdd=new PDO("mysql:host=$host;dbname=$dbname", $user, $mdp);
@@ -17,33 +16,18 @@
     }
 ?>
 <?php
-        $requser = $bdd->prepare("SELECT * FROM commandes WHERE IDTRANSACTION = $IDCOMMANDE");
-        $requser->execute(array($_SESSION['IDCOMMANDE']));
+    if(isset($_SESSION['IDCOMMANDE'])) 
+    {
+        $requser = $bdd->prepare("SELECT * FROM commandes WHERE IDTRANSACTION = $_SESSION[IDCOMMANDE]");
+        $requser->execute(array($_SESSION['IDRESTAURANT']));
         $user = $requser->fetch();
 
-        if(isset($_POST['newnameclient'])) 
+        if(isset($_POST['newville'])) 
         {
-           $newnameclient = htmlspecialchars($_POST['newnameclient']);
-           $insertnewnameclient = $bdd->prepare("UPDATE commandes SET NOM = ? WHERE IDTRANSACTION = $IDCOMMANDE");
-           $insertnewnameclient->execute(array($newnameclient));
+           $newname = htmlspecialchars($_POST['newnameclient']);
+           $insertname = $bdd->prepare("UPDATE commandes SET NOM = $newname WHERE IDTRANSACTION = $_SESSION[IDCOMMANDE]");
+           $insertname->execute(array($newname));
         }
-        if(isset($_POST['newquantite']) ) 
-        {
-           $newquantite = htmlspecialchars($_POST['newquantite']);
-           $insertnewquantite = $bdd->prepare("UPDATE commandes SET QUANTITE = ? WHERE IDTRANSACTION = $IDCOMMANDE");
-           $insertnewquantite->execute(array($newquantite));
-        }
-        if(isset($_POST['newmoyen']) ) 
-        {
-           $newmoyen= htmlspecialchars($_POST['newmoyen']);
-           $insertnewmoyen = $bdd->prepare("UPDATE commandes SET MOYEN = ? WHERE IDTRANSACTION = $IDCOMMANDE");
-           $insertnewmoyen->execute(array($newmoyen));
-        }
-        if(isset($_POST['newadressecommande']) ) 
-        {
-           $newadressecommande = htmlspecialchars($_POST['newadressecommande']);
-           $insertnewadressecommande = $bdd->prepare("UPDATE commandes SET ADRESSE = ? WHERE IDTRANSACTION = $IDCOMMANDE");
-           $insertnewadressecommande->execute(array($newadressecommande));
         }
         header('Location: ../index.php?page=lescommandes');
      ?>
