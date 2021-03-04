@@ -1,22 +1,22 @@
 <body>
-    <figure><img src="https://media-cdn.tripadvisor.com/media/photo-s/12/5c/0b/8e/getlstd-property-photo.jpg" alt="banniere" class="banniere"/></figure>
+    <figure><img src="/lafourchetteabretelle/asset/images/Image bannière.jpg" alt="banniere" class="banniere"/></figure>
     <br>
-    <a href="./index.php"><button id ="callToAction1"><div id="conteneurTakeAway"><div>Faites-vous livrer<br>ou<br>prenez à emporter</div> <div><img src="/lafourchetteabretelle/asset/images/take-away.png" id="takeAwayImage"/></div></div></button></a>
+    <a href="./index.php"><button id ="callToAction1"><div id="conteneurTakeAway"><div id="fontTakeAway">Faites-vous livrer<br>OU<br>prenez à emporter</div> <div><img src="/lafourchetteabretelle/asset/images/take-away.png" id="takeAwayImage"/></div></div></button></a>
     <div id="bienvenueAccueil">Bienvenue à La Fourchette à Bretelle, le restautant où la vie est plus belle</div>
     <br><br>
     <div id=iconeBienvenue>
         <div class="hover14 column">
-            <figure><img src="https://icones8.fr/vue-static/icon/svg/paintPalette.svg" alt="" id=""/></figure>
+            <figure><img src="/lafourchetteabretelle/asset/images/interieur.png" alt="" id="interieur"/></figure>
             <div class="iconeSpan">Un intérieur sobre et élégant<br>vous attends dès que la situation<br>le permettra de nouveau.</div>
         </div>
 
         <div class="hover14 column">
-            <figure><img src="https://icones8.fr/vue-static/icon/svg/paintPalette.svg" alt="" id=""/></figure>
+            <figure><img src="/lafourchetteabretelle/asset/images/allechant.png" alt="" id="carteAllechante"/></figure>
             <div class="iconeSpan">Une carte alléchante</div>
         </div>
 
         <div class="hover14 column">
-            <figure><img src="https://icones8.fr/vue-static/icon/svg/paintPalette.svg" alt="" id=""/></figure>
+            <figure><img src="/lafourchetteabretelle/asset/images/zero-gachis.png" alt="" id="zeroGachis"/></figure>
             <div class="iconeSpan">Zéro gâchis, choisissez un<br>panier avec les produits<br>invendus du jour. </div>
         </div>
     </div>
