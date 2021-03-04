@@ -1,17 +1,13 @@
 <body>
     <figure><img src="https://media-cdn.tripadvisor.com/media/photo-s/12/5c/0b/8e/getlstd-property-photo.jpg" alt="banniere" class="banniere"/></figure>
     <br>
-    <a href="./index.php"><button id ="callToAction1">Faites vous livrer</button></a>
-    <br><br>
-    <a href="./index.php"><button id ="callToAction2">Prenez à emporter</button></a>
+    <a href="./index.php"><button id ="callToAction1"><div id="conteneurTakeAway"><div>Faites-vous livrer<br>ou<br>prenez à emporter</div> <div><img src="/lafourchetteabretelle/asset/images/take-away.png" id="takeAwayImage"/></div></div></button></a>
     <div id="bienvenueAccueil">Bienvenue à La Fourchette à Bretelle, le restautant où la vie est plus belle</div>
-    <br>
+    <br><br>
     <div id=iconeBienvenue>
-
-
         <div class="hover14 column">
             <figure><img src="https://icones8.fr/vue-static/icon/svg/paintPalette.svg" alt="" id=""/></figure>
-            <div class="iconeSpan">Un intérieur sobre et élégant</div>
+            <div class="iconeSpan">Un intérieur sobre et élégant<br>vous attends dès que la situation<br>le permettra de nouveau.</div>
         </div>
 
         <div class="hover14 column">
@@ -21,11 +17,7 @@
 
         <div class="hover14 column">
             <figure><img src="https://icones8.fr/vue-static/icon/svg/paintPalette.svg" alt="" id=""/></figure>
-            <div class="iconeSpan">Une équipe chaleureuse</div>
-        </div>
-        <div class="hover14 column">
-            <figure><img src="https://icones8.fr/vue-static/icon/svg/paintPalette.svg" alt="" id=""/></figure>
-            <div class="iconeSpan">Zéro gaspis à la carte</div>
+            <div class="iconeSpan">Zéro gâchis, choisissez un<br>panier avec les produits<br>invendus du jour. </div>
         </div>
     </div>
     <br>

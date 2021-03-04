@@ -9,9 +9,15 @@
 	font-family: "Play";
 }
 
+body
+{
+	background-color: #535353;
+}
+
 .logo
 {
 	width : 200px;
+	
 }
 
 nav ul
@@ -20,37 +26,36 @@ nav ul
     display: flex;
 }
 
+
 .menu {
     display: flex;                /* Transformation en flexbox */
     padding:0;          /* Suppression des marges internes */
-    background-color: #9B584C;       /* Ajout de la couleur d'arrière-plan */
-
+    background-color: #d3d3d3;       /* Ajout de la couleur d'arrière-plan */
 }
 .menu li {
     list-style-type: none ;       /* Suppression des puces */
-	margin-right : 50px;
+	margin-right : 5px;
 }
-.menu a {
+.menu a.overeffect {
     display:block;                /* Transformation en block */
     min-width: 120px;             /* Largeur minimale des liens */   
     
     margin: 0.5rem;               /* Marges externes */
     padding: 0.4rem 0;            /* Marges internes */
     text-align: center;           /* Centrage du texte */   
-    background-color: white;    /* Arrière-plan */
     font-family: "Baumans", cursive;
     color: black;                  /* Couleur du texte */
     text-decoration: none;        /* Suppression du soulignement */
-    border: 1px solid #fff;       /* Ajout d'une bordure */
     border-radius: 4px;           /* Arrondis des bordures */
     
     transition: all 1s ;          /* Ajout des effets de transition */
+	color : #ff3600;
 }
 
-.menu a:hover,
+.menu a:hover.overeffect,
 .menu a:hover.actif{
     background-color: black;
-    color: #B1876F;
+    color: white;
     border-color:#B1876F;
 }
 
@@ -62,8 +67,17 @@ nav ul
 	z-index: 1;
 }
 
+#takeAwayImage
+{
+	width : 100px;
+}
 
-#callToAction1, #callToAction2
+#conteneurTakeAway
+{
+	display:flex;
+}
+
+#callToAction1
 {
 	font-size : 0.8em;
 	padding : 7px;
@@ -73,7 +87,7 @@ nav ul
 	position : absolute;
 	z-index: 2;
 }
-#callToAction1:hover, #callToAction2:hover
+#callToAction1:hover
 {
 	background-color: black;
     color: #B1876F;
@@ -86,26 +100,22 @@ nav ul
 	right : 20px;
 }
 
-#callToAction2
-{
-	top : 450px;
-	right : 20px;
-}
-
 #bienvenueAccueil
 {
 	text-align: center;
 	font-size : 1.6em;
-	margin-top : -60px;
+
 }
 
 #iconeBienvenue
 {
 	display : flex;
 	justify-content: space-around;
-	background-color : lightgray;
-	padding-top : 15px;
-	padding-bottom : 20px;
+	background-color : black;
+	padding-top : 40px;
+	padding-bottom : 40px;
+	color : #ff3600;
+	text-align: center;
 }
 
 .hover14 figure img {
@@ -153,7 +163,7 @@ nav ul
 	padding-bottom : 65px;
 	padding-left : 40px;
 	padding-right : 40px;
-	background-color: whitesmoke;
+	background-color: white;
 	margin-left : -50px;
 
 }
