@@ -1,5 +1,6 @@
 <?php
-$sql = "SELECT * FROM `commandes`";
+$NOM = $_SESSION['NOM'];
+$sql = "SELECT * FROM `commandes` WHERE NOM = '$_SESSION[NOM]' ";
 $rs  = $bdd->prepare($sql);
 $rs->execute(); 
 $enrs = $rs->fetchAll(); 

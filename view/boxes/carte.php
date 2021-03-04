@@ -17,6 +17,7 @@ $sql = "SELECT * FROM `plats`";
                 <img src="<?= $array[2];?>" height="150" width="300" />
                 <div><?= $array[1];?></div>
                 <div><?= $array[3];?> Euros</div>
+                <div><?= $array[4];?></div>
                 
 
                 <form method="POST" action="./index.php?page=commande" class="form">
