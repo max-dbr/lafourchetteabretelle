@@ -11,7 +11,7 @@ $Passe=$_POST['Passe'];
 
 $sql = "INSERT INTO `clients`(`SEXE`, `NOM`, `PRENOM`, `TEL`, `ADRESSE`,`ADRESSEMAIL`, `MOTDEPASSE`) VALUES ('$Civilite','$Nom','$Prenom','$Tel','$Adresse','$Mail','$Passe')";
     mysqli_query($connection, $sql);
-    header('Location: ../index.php');
+    header('Location: ../index.php?page=login');
 
 
 ?>

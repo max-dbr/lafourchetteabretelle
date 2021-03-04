@@ -17,12 +17,13 @@ $sql = "SELECT * FROM `plats`";
                 <img src="<?= $array[2];?>" height="150" width="300" />
                 <div><?= $array[1];?></div>
                 <div><?= $array[3];?> Euros</div>
+                <div><?= $array[4];?></div>
                 
 
                 <form method="POST" action="./index.php?page=commande" class="form">
                 <input type="hidden" name="IDPRODUIT" id="IDPRODUIT" value="<?php echo $array[0]?>"> <input type="submit" value="Commander"></input></form>
                 <?php
-            if(isset($_SESSION['Mail'])) 
+            if(($_SESSION['Mail']) == "admin@gmail.com") 
                 {
                 ?>
 
@@ -47,6 +48,11 @@ $sql = "SELECT * FROM `plats`";
 </div>
 
 </table>
+
+<?php
+            if(($_SESSION['Mail']) == "admin@gmail.com") 
+                {
+                ?>
 <form method="POST" action="./execution/ajouterplat.php">
  <fieldset>
  <legend>Ajout plat</legend>
@@ -71,3 +77,7 @@ $sql = "SELECT * FROM `plats`";
  <button type="submit">Ajouter</button>
  </fieldset>
  </form>
+
+ <?php
+ }
+ ?>
