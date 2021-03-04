@@ -12,6 +12,7 @@ $enrs = $rs->fetch();
          <br /><br />
          <form method="POST" action="./execution/modifierrestaurant.php">
             <table>
+            <input type="HIDDEN" name ="IDRESTAURANT" value="<?php echo $enrs[0]; ?>"> 
                <tr>
                   <td align="right">
                      <label for="Ville">Ville :</label>
