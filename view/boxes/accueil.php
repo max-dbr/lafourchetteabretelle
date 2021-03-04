@@ -44,7 +44,9 @@
      <div class="carousel-item">
      <div class="carouselBloc"><img src="http://assets.suelo.pl/soup/img/photos/special-pizza.jpg" class="d-block w-50" alt="..." class="carrousel">
       <div class="carrouselDiv">
-        Helloooooooooooooo World</div>
+      <span class="titreMenuCarousel">L'Abdel Burger</span> <br><br>
+      <span>Un pain moelleux avec éclats de maïs, une sauce goût fumé, des oignons croustillants, des onion rings, des tranches de bacon , des tranches de cheddar fondu et une viande de bœuf grillée à la flamme !</span>
+    </div>
     </div>
     </div>
     <div class="carousel-item">
