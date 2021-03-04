@@ -10,8 +10,11 @@ $enrs = $rs->fetchAll();
 <table>
 <thead>
                 <tr>
+                    <th>PRODUIT</th><br>
                     <th>QUANTITE</th><br>
                     <th>MOYEN</th><br>
+                    <th>PRIX PAYE</th><br>
+                    <th>DATE</th><br>
 
 
                 </tr>
@@ -22,8 +25,11 @@ $enrs = $rs->fetchAll();
   {
       ?>
 <tr>
+<td> <?php echo $array[4]?></td>
 <td> <?php echo $array[5]?></td>
 <td> <?php echo $array[7]?></td>
+<td> <?php echo $array[6]?> €</td>
+<td> <?php echo $array[9]?></td>
 
 </tr>
 <?php

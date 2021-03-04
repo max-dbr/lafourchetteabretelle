@@ -16,30 +16,37 @@ $sql = "SELECT * FROM `plats` WHERE ID = $SESSION[IDPRODUIT] ";
 <?php
         // ICI : FAIRE VOTRE FOREACH POUR L'AFFICHAGE
         foreach($enr as $array)
-        echo $SESSION['NOMPRODUIT'];
     
         { 
             ?>
     
   <form class="forme" method="POST" action="execution/validationcommande.php">
 <img src="<?= $array[2];?>" height="150" width="300" />
-<div><?= $array[3];?></div>
-<div><?= $array[5];?></div><br>
+<div><?= $array[1];?></div>
+<div><?= $array[3];?> €</div>
+<input type="HIDDEN" name ="NOMPLAT" value="<?php echo $array[1]; ?>">
+<input type="HIDDEN" name ="PRIXPLAT" value="<?php echo $array[3]; ?>">
+<label for="VILLE">Votre restaurant:</label>
+<select name="VILLE" id="Ville">
+    <option value="">--Choisissez--</option>
+    <option value="BREST">BREST</option>
+    <option value="LYON">LYON</option>
+</select>
   
-<label for="Livraison">Un moyen:</label>
-<select name="Livraison" id="Livraison">
+<label for="LIVRAISON">Un moyen:</label>
+<select name="LIVRAISON" id="Livraison">
     <option value="">--Choisissez--</option>
     <option value="Livraison">Livraison</option>
     <option value="Emporté">Emporté</option>
 </select>
-<label for="Paiement">Paiement:</label>
-<select name="Paiement" id="Paiement">
+<label for="PAIEMENT">Paiement:</label>
+<select name="PAIEMENT" id="Paiement">
     <option value="">--Choisissez--</option>
     <option value="ESPECE">ESPECES</option>
     <option value="CB">PAR CB</option>
 </select>
-<label for="Quantite">QUANTITE :</label>
- <input type="number" name="Quantite" max="10" min="1" required>
+<label for="QUANTITE">QUANTITE :</label>
+ <input type="number" name="QUANTITE" max="10" min="1" required>
 			<button>JE VALIDE MA COMMANDE</button>
 <?php
 $Fid = $array[3]/10;
