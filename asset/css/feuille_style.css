@@ -142,15 +142,16 @@ nav ul
 
 #carouselExampleControls
 {
-	width : 800px;
+	width : 600px;
 	margin-left : 37%;
 }
 
 .carouselBloc
 {
 	display : flex;
-	flex-grow: 10;
+	flex-grow: 300;
 	background-color: grey;
+	position : relative;
 }
 
 

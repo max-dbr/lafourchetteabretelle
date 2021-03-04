@@ -35,7 +35,7 @@
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
     <div class="carousel-item active">
-      <div class="carouselBloc"><img src="https://img.cuisineaz.com/680x357/2017-09-06/i132233-boeuf-bourguignon-au-companion.jpeg" class="d-block w-100" alt="..." class="carrousel"><div>Hello World</div></div>
+      <div class="carouselBloc"><img src="http://assets.suelo.pl/soup/img/photos/special-pizza.jpg" class="d-block w-100" alt="..." class="carrousel"><div>Hello World</div></div>
     </div>
     <div class="carousel-item">
       <img src="https://static.emilehenry.com/866768-large_default/plat-a-four-ovale.jpg" class="d-block w-100" alt="..." class="carrousel">
