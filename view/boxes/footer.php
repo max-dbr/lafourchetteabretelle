@@ -3,7 +3,7 @@
     <br>
     © Copyright 2021 - Dream Team
     <br><br>
-    mentions légales
+    mentions jean
     <br>
     Contact
 </div>

@@ -4,7 +4,7 @@
     $dbname = 'workshop';
     $user = 'root';
     $mdp = 'root';
-    $_POST['IDCOMMANDE']  = $_SESSION['IDCOMMANDE'];
+    $_POST['IDCOMMANDE']  = $IDCOMMANDE;
 
     try
     {
@@ -17,9 +17,7 @@
     }
 ?>
 <?php
-    if(isset($_SESSION['IDCOMMANDE'])) 
-    {
-        $requser = $bdd->prepare("SELECT * FROM commandes WHERE IDTRANSACTION = $_SESSION[IDCOMMANDE]");
+        $requser = $bdd->prepare("SELECT * FROM commandes WHERE IDTRANSACTION = $IDCOMMANDE");
         $requser->execute(array($_SESSION['IDCOMMANDE']));
         $user = $requser->fetch();
 
@@ -46,7 +44,6 @@
            $newadressecommande = htmlspecialchars($_POST['newadressecommande']);
            $insertnewadressecommande = $bdd->prepare("UPDATE commandes SET ADRESSE = ? WHERE IDTRANSACTION = $IDCOMMANDE");
            $insertnewadressecommande->execute(array($newadressecommande));
-        }
         }
         header('Location: ../index.php?page=lescommandes');
      ?>
