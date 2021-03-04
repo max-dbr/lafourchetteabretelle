@@ -26,7 +26,7 @@
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
     <div class="carousel-item active">
-      <div class="carouselBloc"><img src="http://assets.suelo.pl/soup/img/photos/special-pizza.jpg" class="d-block w-50" alt="..." class="carrousel">
+      <div class="carouselBloc"><img src="/lafourchetteabretelle/asset/images/Les Classiques.png" class="d-block w-50" alt="..." class="carrousel">
       <div class="carrouselDiv">
         <span class="titreMenuCarousel">L'Abdel Burger</span> <br><br>
         <span>Un pain moelleux avec éclats de maïs, une sauce goût fumé, des oignons croustillants, des onion rings, des tranches de bacon , des tranches de cheddar fondu et une viande de bœuf grillée à la flamme !</span>
