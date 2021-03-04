@@ -59,6 +59,10 @@ if ($_GET['page'] == "login")
     {
         $pageActuelle = 'lescommandes.php';
     }
+    else if ($_GET['page'] == "modifiercommande")
+    {
+        $pageActuelle = 'modifiercommande.php';
+    }
 
 }
 else
