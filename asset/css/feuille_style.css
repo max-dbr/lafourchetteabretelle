@@ -11,7 +11,7 @@
 
 body
 {
-	background-color: #535353 !important;
+	background-color: #d3d3d3 !important;
 	color : #ff3600 !important;
 }
 
@@ -31,7 +31,7 @@ nav ul
 .menu {
     display: flex;                /* Transformation en flexbox */
     padding:0;          /* Suppression des marges internes */
-    background-color: #d3d3d3;       /* Ajout de la couleur d'arrière-plan */
+    background-color: #e9e9e9;       /* Ajout de la couleur d'arrière-plan */
 }
 .menu li {
     list-style-type: none ;       /* Suppression des puces */
