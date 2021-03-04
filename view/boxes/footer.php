@@ -5,5 +5,5 @@
     <br><br>
     mentions légales
     <br>
-    Politiques de confidentialités
+    Contact
 </div>
