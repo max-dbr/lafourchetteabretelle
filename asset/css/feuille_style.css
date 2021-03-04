@@ -20,323 +20,160 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-	background-image: url(/asset/images/background.jpg);
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-a:link 
-{ 
- text-decoration:none; 
-} 
 
-/******** MENUBAR **********/
-
-.logo {
-	height: 30px;
-}
-
-nav {
-	margin-top: 5px;
-
-}
-.logo a,
-nav a {
-	padding: 10px 15px;
-	text-transform: uppercase;
-	text-align: center;
-	display: block;
-}
-
-nav a {
-	color: black;
-	font-size: .99em;
-}
-
-nav a:hover {
-	color: white;
-}
-
-.header {
-	padding-top: .5em;
-	padding-bottom: .5em;
-    background-color:green;
-	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-}
-
-
-/* ================================= 
-  Media Queries
-==================================== */
-
-
-
-@media (max-width: 769px) {
-	.header,
-	nav ul {
-		display: flex;
-	}
-	.header nav ul  {
-		flex-direction: column;
-		align-items: center;
-		width: 80%;
-		margin: 0 auto;
-		max-width: 1150px;
-    	
-	}
-}
-
-@media (min-width: 769px) {
-	.header nav ul, nav ul  {
-		flex-direction: row;
-		display: flex;
-		align-items: center;
-	}
-
-}
-
-/************************** STRUCTURE PAGE  **********************/
-
-.text-center
+nav ul
 {
-	text-align: center;
-}
-h1 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 35px;
-    margin-bottom: 45px;
-    font-weight: 350;
-}
-h1 .effet {
-    font-weight: 350;
-    color: rgb(76, 0, 255);
-}
-h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 20px;
-    margin-bottom: 45px;
-    font-weight: 350;
-}
-body
-{
-    background-color:white;
-	font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-
-.container {
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 50px;
-    background: #fff;
-	padding: 70px;
-	box-shadow: 0 0 8px 0 rgb(0 0 0 / 8%), 0 0 15px 0 rgb(0 0 0 / 2%), 0 0 20px 4px rgb(0 0 0 / 6%);
-    background: #fff;
-    border: 1px solid #dad9da;
-  }
-  @media (min-width: 768px) {
-	.container {
-	  width: 750px;
-	}
-  }
-  @media (min-width: 992px) {
-	.container {
-	  width: 970px;
-	}
-  }
-  @media (min-width: 1200px) {
-	.container {
-	  width: 1170px;
-	}
-  }
-
-.list_one div 
-{
-    text-align: center;
-    font-size: 21px;
-	margin-bottom: 15px;
-	margin: auto;
-}
-.equipe
-{
-	display: flex;
-}
-.equipe .sexe-f
-{
-	border: 2px solid red;
-}
-.equipe .sexe-h
-{
-	border: 2px solid blue;
-}
-.equipe > div.equipier
-{
-    overflow: hidden;
+    list-style: none;
     display: flex;
-    margin: 1em;
-    display: flex;
-	flex-direction: column;
-	text-align: center;
 }
-.equipe > div.equipier img
+
+.menu {
+    display: flex;                /* Transformation en flexbox */
+    padding:0;          /* Suppression des marges internes */
+    background-color: #9B584C;       /* Ajout de la couleur d'arrière-plan */
+
+}
+.menu li {
+    list-style-type: none ;       /* Suppression des puces */
+	margin-right : 50px;
+}
+.menu a {
+    display:block;                /* Transformation en block */
+    min-width: 120px;             /* Largeur minimale des liens */   
+    
+    margin: 0.5rem;               /* Marges externes */
+    padding: 0.4rem 0;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */   
+    background-color: white;    /* Arrière-plan */
+    font-family: "Baumans", cursive;
+    color: black;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+    
+    transition: all 1s ;          /* Ajout des effets de transition */
+}
+
+.menu a:hover,
+.menu a:hover.actif{
+    background-color: black;
+    color: #B1876F;
+    border-color:#B1876F;
+}
+
+.banniere
 {
-	width: 150px;
-	margin-bottom: 10px;
-	margin-left: auto;
-	margin-right: auto;
+	width : 100%;
+	height : 600px;
+	margin-top : -30px;
+	z-index: 1;
 }
 
 
-/************************** TABLE RESPONSIVE  **********************/
-
-table { 
-	width: 750px; 
-	border-collapse: collapse; 
-	margin:50px auto;
-	}
-
-/* Zebra striping */
-tr:nth-of-type(odd) { 
-	background: #eee; 
-	}
-
-th { 
-	background:gold; 
-	color: black; 
-	font-weight: bold; 
-	}
-
-td, th { 
-	padding: 10px; 
-	border: 1px solid #ccc; 
-	text-align: center; 
-	font-size: 18px;
-	}
-
-/* 
-Max width before this PARTICULAR table gets nasty
-This query will take effect for any screen smaller than 760px
-and also iPads specifically.
-*/
-@media 
-only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
-
-	table { 
-	  	width: 100%; 
-	}
-
-	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, tr { 
-		display: block; 
-	}
-	
-	/* Hide table headers (but not display: none;, for accessibility) */
-	thead tr { 
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
-	
-	tr { border: 1px solid #ccc; }
-	
-	td { 
-		/* Behave  like a "row" */
-		border: none;
-		border-bottom: 1px solid #eee; 
-		position: relative;
-		padding-left: 50%; 
-	}
-
-	td:before { 
-		/* Now like a table header */
-		position: absolute;
-		/* Top/left values mimic padding */
-		top: 6px;
-		left: 6px;
-		width: 45%; 
-		padding-right: 10px; 
-		white-space: nowrap;
-		/* Label the data */
-		content: attr(data-column);
-
-		color: #000;
-		font-weight: bold;
-	}
-
+#callToAction1, #callToAction2
+{
+	font-size : 0.8em;
+	padding : 7px;
+	border: 1px, solid, black;
+	background-color: white;
+	transition: all 1s ;
+	position : absolute;
+	z-index: 2;
+}
+#callToAction1:hover, #callToAction2:hover
+{
+	background-color: black;
+    color: #B1876F;
+    border-color:#B1876F;
 }
 
-	
-	form {
-		width: auto;
-		padding: 30px;
-		align-items: center;
-		text-align: center;
-	}
-	.input[type=submit] {
-		align-items: center;
-		background-color: gold;
-		color: black;
-		padding: 14px 20px;
-		margin: 8px 0;
-		border: none;
-		cursor: pointer;
-		width: auto;
-	}
-	.input[type=submit]:hover {
-		background-color: black;
-		color: gold;
-		border: 1px solid gold;
-	}
-	fieldset {
-		flex-wrap: wrap;
-		margin-right: 250px;
-		margin-left: 250px;
-		padding: 15px;
-		border-color: #9B584C;
-		font-family: Verdana, Geneva, Tahoma, sans-serif;
-		font-size: 14px;
-		
-	   }
+#callToAction1
+{
+	top : 500px;
+	right : 20px;
+}
+
+#callToAction2
+{
+	top : 450px;
+	right : 20px;
+}
+
+#bienvenueAccueil
+{
+	text-align: center;
+	font-size : 1.6em;
+	margin-top : -60px;
+}
+
+#iconeBienvenue
+{
+	display : flex;
+	justify-content: space-around;
+	background-color : lightgray;
+	padding-top : 15px;
+	padding-bottom : 20px;
+}
+
+.hover14 figure img {
+	-webkit-transform: rotate(15deg) scale(1.4);
+	transform: rotate(15deg) scale(1.4);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover14 figure:hover img {
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+}
+
+.iconeSpan
+{
+	margin-left : -40px;
+}
+
+
+
+
+#specialites
+{
+	text-align: center;
+	font-size : 1.4em;
+}
+
+#carouselExampleControls
+{
+	width : 500px;
+	margin-left : 37%;
+}
 
 
 
 
 
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 * {
 	box-sizing: border-box;
 }
-
-
-
-
 
 p {
 	font-size: 14px;
@@ -359,7 +196,7 @@ a {
 
 button {
 	border-radius: 20px;
-	border: 1px solid green;
+	border: 1px solid black;
 	background-color: green;
 	color: black;
 	font-size: 12px;
