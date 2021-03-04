@@ -4,14 +4,14 @@
 
     <nav class="menu">
         <ul>
-            <li><a href="./index.php"><img class="logo" src="./asset/images/la-fourchette-a-bretelles-logoV2-02.png"></a></li>
-            <li><a href="./index.php">Accueil</a></li>
-            <li><a href="./index.php?page=carte">Carte</a></li>
+            <li><a href="./index.php" ><img class="logo" src="./asset/images/la-fourchette-a-bretelles-logoV2-02.png"></a></li>
+            <li><a href="./index.php" class="overeffect">Accueil</a></li>
+            <li><a href="./index.php?page=carte" class="overeffect">Carte</a></li>
             <?php
 
             if(empty($_SESSION['Mail'])) 
             { ?>
-            <li><a href="./index.php?page=login">Se connecter</a></li>
+            <li><a href="./index.php?page=login" class="overeffect">Se connecter</a></li>
             
             <?php
             }
@@ -21,8 +21,8 @@
             if(isset($_SESSION['Mail'])) 
                 {
                 ?>
-            <li><a href="./index.php?page=gestion">Mon Compte</a></li>
-            <li><a href="./execution/deconnexion.php">Déconnexion</a></li>
+            <li><a href="./index.php?page=gestion" class="overeffect">Mon Compte</a></li>
+            <li><a href="./execution/deconnexion.php" class="overeffect">Déconnexion</a></li>
             <?php
             }
             ?>
@@ -30,7 +30,7 @@
             if($_SESSION['Mail'] == "admin@gmail.com")
             {
                 ?>
-            <li><a href="./index.php?page=administration">Administration</a></li>
+            <li><a href="./index.php?page=administration" class="overeffect">Administration</a></li>
             <?php
                 }
                 ?>
