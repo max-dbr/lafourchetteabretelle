@@ -4,7 +4,7 @@
 
     <nav class="menu">
         <ul>
-            <li><a href="./index.php"><img class="logo" src="/asset/images/la-fourchette-a-bretelles-logoV2-02.png"></a></li>
+            <li><a href="./index.php"><img class="logo" src="./asset/images/la-fourchette-a-bretelles-logoV2-02.png"></a></li>
             <li><a href="./index.php">Accueil</a></li>
             <li><a href="./index.php?page=carte">Carte</a></li>
             <?php
@@ -21,7 +21,7 @@
             if(isset($_SESSION['Mail'])) 
                 {
                 ?>
-            <li><a href="./index.php?page=gestion">MON COMPTE</a></li>
+            <li><a href="./index.php?page=gestion">Mon Compte</a></li>
             <li><a href="./execution/deconnexion.php">Déconnexion</a></li>
             <?php
             }

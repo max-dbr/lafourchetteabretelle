@@ -1,3 +1,19 @@
+@font-face
+{
+	font-family: 'Play';
+	src:url('fonts/Play-Regular.ttf');
+}
+
+*
+{
+	font-family: "Play";
+}
+
+.logo
+{
+	width : 200px;
+}
+
 nav ul
 {
     list-style: none;
@@ -145,6 +161,7 @@ nav ul
 .titreMenuCarousel
 {
 	font-size : 1.8em;
+	font-weight: bold;
 }
 
 
