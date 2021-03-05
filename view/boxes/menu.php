@@ -6,7 +6,7 @@
             <li><a href="./index.php" ><img class="logo" src="./asset/images/la-fourchette-a-bretelles-logoV2-02.png"></a></li>
             <li><a href="./index.php" class="overeffect">Accueil</a></li>
             <li><a href="./index.php?page=carte" class="overeffect">Carte</a></li>
-            <li><a href="./view/boxes/contact.php" class="overeffect">Contact</a></li>
+            <li><a href="./index.php?page=contact" class="overeffect">Contact</a></li>
             <li><a href="./execution/nosRestaurants.php" class="overeffect">Nos restaurants</a></li>
             <?php
  
