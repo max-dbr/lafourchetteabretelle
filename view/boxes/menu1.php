@@ -14,7 +14,7 @@
 
     <nav class="menu2">
         <ul>
-            <li><a href="./index.php" ><img class="logo" src="./asset/images/la-fourchette-a-bretelles-logoV2-02.png"></a></li>
+            <li><a href="./index.php" ><img class="logo" src="./asset/images/la-fourchette-a-bretelles-logo-blanc-02.png"></a></li>
         </ul>
         <img src="/lafourchetteabretelle/asset/images/Hamburger_icon.svg.png" id="humbergerImage" onclick="afficher()"/>
         <div id="menuHumberger">
