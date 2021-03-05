@@ -8,6 +8,7 @@
             <li><a href="./index.php" class="overeffect">Accueil</a></li>
             <li><a href="./index.php?page=carte" class="overeffect">Carte</a></li>
             <li><a href="./index.php?page=login" class="overeffect">Se connecter</a></li>
+            <li><a href="./index.php?page=gestion" class="overeffect">Mon Compte</a></li>
         </ul>
     </nav>
 
