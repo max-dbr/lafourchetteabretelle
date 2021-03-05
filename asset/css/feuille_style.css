@@ -453,4 +453,32 @@ td, th {
 		
 	   }
 
+	   .list_one div 
+{
+    text-align: center;
+    font-size: 21px;
+	margin-bottom: 15px;
+	margin: auto;
+}
+.equipe
+{
+	display: flex;
+}
+.equipe > div.equipier
+{
+    overflow: hidden;
+    display: flex;
+    margin: 1em;
+    display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.equipe > div.equipier img
+{
+	width: 150px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 	
