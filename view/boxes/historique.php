@@ -6,7 +6,9 @@ $rs->execute();
 $enrs = $rs->fetchAll(); 
 
     ?>
-    <h1> MON HISTORIQUE </h1>
+    <div class="historique">
+      <h2>MON HISTORIQUE </h2>
+    </div>
 
 <table>
 <thead>

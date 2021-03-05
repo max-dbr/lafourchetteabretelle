@@ -196,6 +196,24 @@ nav ul
 	width : 300px;
 }
 
+
+#compte
+{
+	text-align: center;
+	color: black;
+}
+
+.progress
+{
+	text-align: center;
+	width: 40%;
+}
+
+.historique
+{
+	text-align: center;
+}
+
 .menu2
 	{
 		visibility: hidden;
@@ -235,6 +253,7 @@ nav ul
 	top : 30px;
 	left : 30px;
 }
+
 
 
 @media screen and (max-width :1199px)
@@ -503,6 +522,7 @@ td, th {
 .equipe
 {
 	display: flex;
+	flex-direction: column;
 }
 .equipe > div.equipier
 {
