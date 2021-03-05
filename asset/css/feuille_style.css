@@ -319,7 +319,7 @@ nav ul
 
 input {
 	background-color: #eee;
-	border: solid 1px green;
+	border: solid 1px black;
 	border-radius: 15px;
 }
 
@@ -523,7 +523,7 @@ td, th {
 .equipe
 {
 	display: flex;
-	flex-direction: column;
+
 }
 .equipe > div.equipier
 {
@@ -531,7 +531,7 @@ td, th {
     display: flex;
     margin: 1em;
     display: flex;
-	
+	flex-direction: column;	
 	text-align: center;
 }
 .equipe > div.equipier img
@@ -540,6 +540,28 @@ td, th {
 	margin-bottom: 10px;
 	margin-left: auto;
 	margin-right: auto;
+}
+.text-center
+{
+ text-align: center;
+}
+h1 {
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 35px;
+ margin-bottom: 45px;
+ font-weight: 350;
+}
+h1 .effet {
+ font-weight: 350;
+ color: rgb(76, 0, 255);
+}
+h2 {
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 20px;
+ margin-bottom: 45px;
+ font-weight: 350;
 }
 
 	
