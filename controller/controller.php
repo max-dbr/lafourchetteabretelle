@@ -63,6 +63,10 @@ if ($_GET['page'] == "login")
     {
         $pageActuelle = 'modifiercommande.php';
     }
+    else if ($_GET['page'] == "contact")
+    {
+        $pageActuelle = 'contact.php';
+    }
 
 }
 else

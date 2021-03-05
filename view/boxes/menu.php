@@ -6,11 +6,14 @@
             <li><a href="./index.php" ><img class="logo" src="./asset/images/la-fourchette-a-bretelles-logoV2-02.png"></a></li>
             <li><a href="./index.php" class="overeffect">Accueil</a></li>
             <li><a href="./index.php?page=carte" class="overeffect">Carte</a></li>
+            <li><a href="./execution/contact.php" class="overeffect">Contact</a></li>
+            <li><a href="./execution/nosRestaurants.php" class="overeffect">Nos restaurants</a></li>
             <?php
  
             if(empty($_SESSION['Mail'])) 
             { ?>
             <li><a href="./index.php?page=login" class="overeffect">Se connecter</a></li>
+            
             
             <?php
             }
@@ -31,6 +34,7 @@
                 ?>
             <li><a href="./index.php?page=administration" class="overeffect">Administration</a></li>
             <li><a href="./execution/deconnexion.php" class="overeffect">Déconnexion</a></li>
+            
             <?php
                 }
                 ?>
