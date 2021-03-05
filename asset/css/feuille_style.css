@@ -26,7 +26,6 @@ nav ul
     display: flex;
 }
 
-
 .menu {
     display: flex;                /* Transformation en flexbox */
     padding:0;          /* Suppression des marges internes */
@@ -50,6 +49,7 @@ nav ul
     
     transition: all 1s ;          /* Ajout des effets de transition */
 	color : #ff3600;
+	margin-top: 35px !important;
 }
 
 .menu a:hover.overeffect,
@@ -113,7 +113,6 @@ nav ul
 {
 	width : 90px;
 }
-
 
 #bienvenueAccueil
 {
@@ -197,6 +196,7 @@ nav ul
 	width : 300px;
 }
 
+
 #compte
 {
 	text-align: center;
@@ -212,6 +212,86 @@ nav ul
 .historique
 {
 	text-align: center;
+}
+
+.menu2
+	{
+		visibility: hidden;
+	}
+
+#menuHumberger
+{
+	display:flex;
+	flex-direction: column;
+	background-color: white;
+	color : white;
+	width : 570px;
+	height : 1900px;
+	position : absolute;
+	right : 1px;
+	top : 300px;
+	z-index: 999;
+	padding : 40px;
+	font-family: "Play";
+	font-size : 1.8em;
+	display : none;
+	
+}
+
+#humbergerImage
+{
+	width : 100px;
+	position : absolute;
+	top : 10px;
+	right : 30px;
+}
+
+#close
+{
+	width : 30px;
+	position : absolute;
+	top : 30px;
+	left : 30px;
+}
+
+
+
+@media screen and (max-width :1199px)
+{
+    .carrouselDiv
+	{
+		visibility: hidden;
+	}
+
+	.logo
+	{
+		width : 500px;
+		margin-left: 200px;
+	}
+	.menu
+	{
+		display: none;
+	}
+	.menu2
+	{
+		visibility: visible;
+
+	}
+	a
+	{ 
+	text-decoration:none !important; 
+	color : black !important;
+	} 
+	#carouselExampleControls
+	{
+	width : 750px;
+	padding-left : 40px;
+	margin-top : -50px;
+	margin-bottom : -20px;
+
+	}
+
+
 }
 
 
@@ -451,5 +531,33 @@ td, th {
 		font-size: 14px;
 		
 	   }
+
+.list_one div 
+{
+    text-align: center;
+    font-size: 21px;
+	margin-bottom: 15px;
+	margin: auto;
+}
+.equipe
+{
+	display: flex;
+}
+.equipe > div.equipier
+{
+    overflow: hidden;
+    display: flex;
+    margin: 1em;
+    display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.equipe > div.equipier img
+{
+	width: 150px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 	

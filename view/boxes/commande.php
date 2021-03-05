@@ -12,6 +12,9 @@ $sql = "SELECT * FROM `plats` WHERE ID = $SESSION[IDPRODUIT] ";
     $enr = $rs->fetchAll();
 
     ?>
+
+
+<section>
 <h1>DETAILS COMMANDE</h1>
 <?php
         // ICI : FAIRE VOTRE FOREACH POUR L'AFFICHAGE
@@ -57,4 +60,5 @@ $Fid = $array[3]/10;
 <?php
 }
 ?>
+</section>
 

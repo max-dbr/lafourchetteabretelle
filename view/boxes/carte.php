@@ -5,7 +5,7 @@ $sql = "SELECT * FROM `plats`";
     $rs->execute(); 
     $enrs = $rs->fetchAll(); 
     ?>
-<h1>Nos plats  <span class="effet">TipTop</span></h1>
+<h1>Nos plats DU JOUR</span></h1>
 
 <div class="list_one">
     <div class="equipe">
@@ -20,11 +20,11 @@ $sql = "SELECT * FROM `plats`";
                 <div><?= $array[3];?> Euros</div>
                 <div><?= $array[4];?></div>
                 
-
+        
                 <form method="POST" action="./index.php?page=commande" class="form">
                 <input type="hidden" name="IDPRODUIT" id="IDPRODUIT" value="<?php echo $array[0]?>"> <input type="submit" value="Commander"></input></form>
                 <?php
-            if(($_SESSION['ROLE']) == 1) 
+            if((isset($_SESSION['Mail'])) && ($_SESSION['ROLE'] == 1)) 
                 {
                 ?>
 
@@ -51,7 +51,7 @@ $sql = "SELECT * FROM `plats`";
 </table>
 
 <?php
-            if(($_SESSION['Mail']) == "admin@gmail.com") 
+            if((isset($_SESSION['Mail'])) && ($_SESSION['ROLE'] == 1))
                 {
                 ?>
 <form method="POST" action="./execution/ajouterplat.php">
