@@ -5,6 +5,6 @@
     <br><br>
     mentions légales
     <br>
-    Contact
+    <a href="./execution/contact.php">Contact</a>
     <br><br>
 </div>

@@ -216,7 +216,7 @@ nav ul
 
 .menu2
 	{
-		visibility: hidden;
+		display:none;
 	}
 
 #menuHumberger
@@ -274,8 +274,7 @@ nav ul
 	}
 	.menu2
 	{
-		visibility: visible;
-
+		display:block;
 	}
 	a
 	{ 
