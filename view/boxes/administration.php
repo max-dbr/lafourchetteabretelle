@@ -7,3 +7,5 @@
 <form method ="POST" action="./index.php?page=restaurants">
 <input type="submit" name="Restaurants" value="Voir les restaurants" >
 </form>
+
+<br><br><br><br><br><br><br>

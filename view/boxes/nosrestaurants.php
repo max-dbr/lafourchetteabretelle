@@ -34,3 +34,4 @@ $sql = "SELECT * FROM `restaurants` WHERE SITUATION = 'OUVRIR'";
 </div>
 
 </table>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
