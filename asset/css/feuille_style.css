@@ -529,7 +529,7 @@ td, th {
     display: flex;
     margin: 1em;
     display: flex;
-	flex-direction: column;
+	
 	text-align: center;
 }
 .equipe > div.equipier img
