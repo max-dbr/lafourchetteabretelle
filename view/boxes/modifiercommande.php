@@ -22,6 +22,30 @@ $enrs = $rs->fetch();
                </tr>
                <tr>
                   <td align="right">
+                     <label for="Adresse">Adresse client :</label>
+                  </td>
+                  <td>
+                  <input type="text" name="newadresseclient" placeholder="Nouvelle quantite" value="<?php echo $enrs[2]; ?>" />
+                  </td>
+               </tr>
+               <tr>
+                  <td align="right">
+                     <label for="quantite">Quantite :</label>
+                  </td>
+                  <td>
+                  <input type="text" name="newquantiteclient" placeholder="Nouvelle quantite" value="<?php echo $enrs[5]; ?>" />
+                  </td>
+               </tr>
+               <tr>
+                  <td align="right">
+                     <label for="Moyen">Moyen :</label>
+                  </td>
+                  <td>
+                  <input type="text" name="newmoyenclient" placeholder="Nouveau moyen" value="<?php echo $enrs[7]; ?>" />
+                  </td>
+               </tr>
+               <tr>
+                  <td align="right">
                      <br />
                      <input type="submit" value="Valider la modification !" />
                   </td>
