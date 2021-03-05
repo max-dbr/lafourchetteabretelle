@@ -322,6 +322,7 @@ nav ul
 input {
 	background-color: #eee;
 	border: solid 1px green;
+	border-radius: 15px;
 }
 
 .container {
