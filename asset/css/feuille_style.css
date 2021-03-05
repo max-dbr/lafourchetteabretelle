@@ -543,3 +543,69 @@ td, th {
 }
 
 	
+
+
+/*Kevinogramme*/
+
+.test {
+     display :flex;
+     flex-direction: row;
+     justify-content: space-around;
+  }
+
+  .googlemap {
+      padding-top: 110px;
+  }
+ 
+#formulaireContact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    border-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+ 
+}
+ 
+label {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    margin-left: 5px;
+}
+ 
+textarea {
+    margin-bottom: 15px;
+    
+}
+ 
+#objet, #nom, #adresse, #tel {
+    border: 2px solid black;
+    margin-left: 5px;
+    margin-right: 300px;
+    padding: 5px;
+    
+}
+ 
+button {
+    background-color: black;
+    border-radius: 3px;
+    color: white;
+    padding: 10px 40px;
+    margin: 3px 200px;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid;
+    font-family: "Baumans", cursive;
+  }
+ 
+  button:hover {
+    background-color: #ff3600;
+}
+ 
+button:after {
+    height: 0;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    }
