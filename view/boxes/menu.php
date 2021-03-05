@@ -7,7 +7,7 @@
             <li><a href="./index.php" class="overeffect">Accueil</a></li>
             <li><a href="./index.php?page=carte" class="overeffect">Carte</a></li>
             <li><a href="./index.php?page=contact" class="overeffect">Contact</a></li>
-            <li><a href="./execution/nosRestaurants.php" class="overeffect">Nos restaurants</a></li>
+            <li><a href="./index.php?page=nosrestaurants" class="overeffect">Nos restaurants</a></li>
             <?php
  
             if(empty($_SESSION['Mail'])) 

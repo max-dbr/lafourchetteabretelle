@@ -67,6 +67,10 @@ if ($_GET['page'] == "login")
     {
         $pageActuelle = 'contact.php';
     }
+    else if ($_GET['page'] == "nosrestaurants")
+    {
+        $pageActuelle = 'nosrestaurants.php';
+    }
 
 }
 else

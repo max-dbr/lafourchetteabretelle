@@ -55,6 +55,9 @@ else
 </table>
 <form method="POST" action="./execution/ajoutrestaurant.php">
  <fieldset>
+ <label for="Image">Image :</label>
+ <input type="text" name="Image" required>
+
  <legend>Ajouter un restaurant</legend>
  <label for="ville">Ville :</label>
  <input type="text" name="Ville" required>

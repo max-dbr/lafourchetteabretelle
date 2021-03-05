@@ -9,7 +9,7 @@
     <div class="progress">
         <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
     </div>
-    <span>Tout les 1000 points, recevez une remise de 5€ sur votre prochaine commande</span>
+    <span>Tous les 1000 points, recevez une remise de 5€ sur votre prochaine commande</span>
 </div>
 
 <?php
