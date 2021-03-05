@@ -459,7 +459,10 @@ input {
 	width: 40px;
 }
 
-
+.progress
+{
+	margin :auto !important;
+}
 
 
 

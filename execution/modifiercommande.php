@@ -4,7 +4,7 @@
     $dbname = 'workshop';
     $user = 'root';
     $mdp = 'root';
-    $STP = $_POST['NOMMODIFICATION'];
+    $_SESSION['IDCOMMANDE'] = $_POST['IDCOMMANDE'];
     try
     {
         $bdd=new PDO("mysql:host=$host;dbname=$dbname", $user, $mdp);
@@ -18,14 +18,14 @@
 <?php
 if(isset($_SESSION['IDCOMMANDE'])) 
 {
-        $requser = $bdd->prepare("SELECT * FROM `clients` WHERE NOM = ? ");
+        $requser = $bdd->prepare("SELECT * FROM `commandes` WHERE IDTRANSACTION = $_SESSION[IDCOMMANDE] ");
         $requser->execute(array($_SESSION['IDCOMMANDE']));
         $user = $requser->fetch();
 
         if(isset($_POST['newnameclient'])) 
         {
            $newname = htmlspecialchars($_POST['newnameclient']);
-           $insertname = $bdd->prepare("UPDATE `clients` SET NOM = $newname WHERE ID = ?");
+           $insertname = $bdd->prepare("UPDATE `commandes` SET IDTRANSACTION = $newname WHERE ID = $_SESSION[IDCOMMANDE]");
            $insertname->execute(array($newname));
         }
     }

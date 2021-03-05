@@ -16,7 +16,7 @@ $enrs = $rs->fetch();
                      <label for="nom">Nom client :</label>
                   </td>
                   <td>
-                  <input type="HIDDEN" name ="NOMMODIFICATION" value="<?php echo $enrs[1]; ?>">
+                  <input type="HIDDEN" name ="IDCOMMANDE" value="<?php echo $enrs[0]; ?>">
                   <input type="text" name="newnameclient" placeholder="Nouveau Nom" value="<?php echo $enrs[1]; ?>" />
                   </td>
                </tr>

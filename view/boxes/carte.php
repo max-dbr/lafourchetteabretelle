@@ -69,12 +69,6 @@ $sql = "SELECT * FROM `plats`";
  <label for="composition">Composition :</label>
  <input type="text" name="Composition" required>
 
- <select name="Service">
- <option value="">--Type--</option>
- <option value="Classic">Classic</option>
- <option value="Zerogachis">Zerogachis</option>
- </select><br><br>
-
  <button type="submit">Ajouter</button>
  </fieldset>
  </form>
