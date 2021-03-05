@@ -36,8 +36,7 @@
                 ?>
         </ul>
     </nav>
-</header>
-<nav class="menu2">
+    <nav class="menu2">
         <ul>
             <li><a href="./index.php" ><img class="logo" src="./asset/images/la-fourchette-a-bretelles-logoV2-02.png"></a></li>
         </ul>
@@ -54,3 +53,4 @@
             <br>
             <img src="/lafourchetteabretelle/asset/images/close.png" id="close" onclick="masquer()"/>
         </div>
+</header>
