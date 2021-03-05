@@ -49,6 +49,7 @@ nav ul
     
     transition: all 1s ;          /* Ajout des effets de transition */
 	color : #ff3600;
+	margin-top: 35px !important;
 }
 
 .menu a:hover.overeffect,
@@ -152,7 +153,7 @@ nav ul
 
 #carouselExampleControls
 {
-	width : 50%;
+	width : 1000px;
 	margin-left : 25%;
 }
 
@@ -195,7 +196,45 @@ nav ul
 	width : 300px;
 }
 
+.menu2
+	{
+		visibility: hidden;
+	}
 
+#menuHumberger
+{
+	display:flex;
+	flex-direction: column;
+	background-color: white;
+	color : white;
+	width : 570px;
+	height : 1900px;
+	position : absolute;
+	right : 1px;
+	top : 300px;
+	z-index: 999;
+	padding : 40px;
+	font-family: "Play";
+	font-size : 1.8em;
+	display : none;
+	
+}
+
+#humbergerImage
+{
+	width : 100px;
+	position : absolute;
+	top : 10px;
+	right : 30px;
+}
+
+#close
+{
+	width : 30px;
+	position : absolute;
+	top : 30px;
+	left : 30px;
+}
 
 
 @media screen and (max-width :1199px)
@@ -204,13 +243,33 @@ nav ul
 	{
 		visibility: hidden;
 	}
-	.carrouselDiv
-	{
-		margin-right:50px;
-	}
+
 	.logo
 	{
-		width : 300px;
+		width : 500px;
+		margin-left: 200px;
+	}
+	.menu
+	{
+		display: none;
+	}
+	.menu2
+	{
+		visibility: visible;
+
+	}
+	a
+	{ 
+	text-decoration:none !important; 
+	color : black !important;
+	} 
+	#carouselExampleControls
+	{
+	width : 750px;
+	padding-left : 40px;
+	margin-top : -50px;
+	margin-bottom : -20px;
+
 	}
 
 

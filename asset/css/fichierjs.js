@@ -9,3 +9,13 @@ signUpButton.addEventListener('click', () => {
 signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
 });
+
+
+let humbergerImage = document.getElementById("humbergerImage");
+function afficher(){
+	menuHumberger.style.display = "block";
+  }
+
+  function masquer(){
+	menuHumberger.style.display = "none";
+  }
