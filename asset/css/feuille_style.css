@@ -287,7 +287,11 @@ nav ul
 	padding-left : 40px;
 	margin-top : -50px;
 	margin-bottom : -20px;
-
+	}
+	#iconeBienvenue
+	{
+		display: flex;
+		flex-direction: column;
 	}
 }
 
@@ -319,7 +323,7 @@ nav ul
 
 input {
 	background-color: #eee;
-	border: solid 1px green;
+	border: solid 1px black;
 	border-radius: 15px;
 }
 
@@ -393,9 +397,9 @@ input {
 }
 
 .overlay {
-	background: green;
-	background: -webkit-linear-gradient(to right, green, green);
-	background: linear-gradient(to right, green, green);
+	background: #ff3600;
+	background: -webkit-linear-gradient(to right, #ff3600, #ff3600);
+	background: linear-gradient(to right, #ff3600, #ff3600);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
