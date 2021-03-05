@@ -542,6 +542,7 @@ td, th {
 .equipe
 {
 	display: flex;
+	flex-direction: column;
 }
 .equipe > div.equipier
 {
