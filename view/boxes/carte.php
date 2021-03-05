@@ -5,7 +5,7 @@ $sql = "SELECT * FROM `plats`";
     $rs->execute(); 
     $enrs = $rs->fetchAll(); 
     ?>
-<h1>Nos plats  <span class="effet">TipTop</span></h1>
+<h1>Nos plats DU JOUR</span></h1>
 
 <div class="list_one">
     <div class="equipe">
