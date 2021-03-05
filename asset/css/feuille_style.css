@@ -572,6 +572,7 @@ label {
     margin-top: 15px;
     margin-bottom: 8px;
     margin-left: 5px;
+	text-align: left;
 }
  
 textarea {
