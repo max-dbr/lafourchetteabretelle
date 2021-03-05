@@ -303,10 +303,7 @@ nav ul
 
 input {
 	background-color: #eee;
-	border: none;
-	padding: 12px 15px;
-	margin: 8px 0;
-	width: 100%;
+	border: solid 1px green;
 }
 
 .container {
@@ -486,28 +483,12 @@ td, th {
 		align-items: center;
 		text-align: center;
 	}
-	.input[type=submit] {
-		align-items: center;
-		background-color: gold;
-		color: black;
-		padding: 14px 20px;
-		margin: 8px 0;
-		border: none;
-		cursor: pointer;
-		width: auto;
-	}
-	.input[type=submit]:hover {
-		background-color: black;
-		color: gold;
-		border: 1px solid gold;
-	}
 	fieldset {
 		flex-wrap: wrap;
-		margin-right: 50px;
-		margin-left: 50px;
+		margin-right: auto;
+		margin-left: auto;
 		padding: 15px;
 		border-color: #9B584C;
-		font-family: Verdana, Geneva, Tahoma, sans-serif;
 		font-size: 14px;
 		
 	   }
