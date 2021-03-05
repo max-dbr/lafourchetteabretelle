@@ -2,7 +2,7 @@
         <section> 
        <div class="test">
         <form>
-            <fieldset>
+            <fieldset id="formulaireContact">
                 <legend>Contact</legend>
                 <label for="objet">Objet :</label>
                 <input type="text" name="objet" id="objet" required>

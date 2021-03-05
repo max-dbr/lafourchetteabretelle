@@ -2,7 +2,7 @@
     <figure><img src="/lafourchetteabretelle/asset/images/Image bannière.jpg" alt="banniere" class="banniere"/></figure>
     <br>
     <a href="./index.php?page=carte"><button id ="callToAction1"><div id="conteneurTakeAway"><div id="fontTakeAway">Faites-vous livrer<br>OU<br>prenez à emporter</div> <div><img src="/lafourchetteabretelle/asset/images/take-away.png" id="takeAwayImage"/></div></div></button></a>
-    <div id="bienvenueAccueil">Bienvenue à La Fourchette à Bretelle, le restautant où la vie est plus belle</div>
+    <div id="bienvenueAccueil">Bienvenue à La Fourchette à Bretelles, le restaurant où la vie est plus belle</div>
     <br><br>
     <div id=iconeBienvenue>
         <div class="hover14 column">

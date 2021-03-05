@@ -5,6 +5,6 @@
     <br><br>
     mentions légales
     <br>
-    <a href="./view/boxes/contact.php">Contact</a>
+    <div class="contactBouton">Contact</div>
     <br><br>
 </div>
